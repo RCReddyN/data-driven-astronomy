@@ -27,7 +27,7 @@ def plot_hist(img):
 def plot_logcolors(img):
     plt.imshow(img, cmap='gray', norm=LogNorm())
     cbar = plt.colorbar(ticks=[5.e3,1.e4,2.e4])
-    cbar.ax.set_yticklabels(['5,000','10,000','19,000'])
+    cbar.ax.set_yticklabels(['5,000','10,000','19,000']) #set labels by looking at the histogram 
     plt.savefig('orion_logcolors.png')
 
 def main():
