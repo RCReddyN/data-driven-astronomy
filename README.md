@@ -13,7 +13,7 @@
 
 <h2>Data paths from the Telescope</h2>
 
-<p>Source: Green Bank Telescope</p>
+<p>Source: Green Bank Telescope (GBT)</p>
 <p>Keep in mind that raw data is available without great effort.</p>
 
 <img src="/images/gbt_if_dfa.PNG">
