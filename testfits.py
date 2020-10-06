@@ -21,7 +21,10 @@ def main():
 
     image.close()   
 
-    plt.imshow(image_data)
+    plt.imshow(image_data, cmap='gray', norm=LogNorm())
+    cbar = plt.colorbar(ticks=[5.e3,1.e4,2.e4])
+    cbar.ax.set_yticklabels(['5,000','10,000','20,000'])
+    plt.colorbar()
     plt.imsave('heart.png', image_data)
 
 if __name__ == "__main__":
