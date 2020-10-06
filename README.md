@@ -16,7 +16,7 @@
 <p>Source: Green Bank Telescope</p>
 <p>Keep in mind that raw data is available without great effort.</p>
 
-<img src="./images/gbt_if_dfa.png">
+<img src="/images/gbt_if_dfa.PNG">
 
 <p>Data formats written by the signal processing back-ends depend on how widely accessible the data are intended to be. It is generally easier and sometimes significantly faster to write data in binary format close to the native format produced by the electronics. However, these data require detailed external documentation and specialized software routines to read them.</p>
 
