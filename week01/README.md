@@ -37,7 +37,7 @@ Python's pip installation tool.</li>
 <p>Python lists are very flexible, but they are slow for big calculations.</p>
 
 <p>NumPy arrays can store purely numerical data in much less space, and are much simpler and faster for calculations.</p>
-<p><a href="mean.py">This code</a> compares performance of calculating mean using Numpy, Statistics modules to manual computation.</p> 
+<p><a href="./mean.py">This code</a> compares performance of calculating mean using Numpy, Statistics modules to manual computation.</p> 
 <footer> The above content is reproduced from:
 <ol><li><a href="https://www.coursera.org/learn/data-driven-astronomy">Data-driven Astronomy</a></li>
 <li><a href="https://www.mathplanet.com/education/pre-algebra/probability-and-statistic/the-mean-the-median-and-the-mode">Math Planet</a></li>
