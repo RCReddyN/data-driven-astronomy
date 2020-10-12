@@ -46,7 +46,7 @@ Python's pip installation tool.</li>
 <li>The header contains metadata about the HDU object, e.g. its dimensions and data type. Every HDU can contain image data. The first HDU is called the primary HDU.</li>
 <li>If we want to access individual HDUs, we can index the HDU list object returned by fits.open. The image data can be accessed using the data attribute.</li>
 <li>The image data is conveniently stored in a NumPy array, so we can operate on it directly.</li>
-<li>You often want to visualise the image data stored in FITS files. We can do this using the plotting library matplotlib.The following is the plot of an example <a href="datasets/image0.fits">fits image.</a> <img src="./images/figure0.png"></li>
+<li>You often want to visualise the image data stored in FITS files. We can do this using the plotting library matplotlib.The following is the plot of an example <a href="datasets/image0.fits">fits image.</a> <img src="../images/figure0.png"></li>
 </ul>
 <footer> The above content is reproduced from:
 <ol><li><a href="https://www.coursera.org/learn/data-driven-astronomy">Data-driven Astronomy</a></li>
