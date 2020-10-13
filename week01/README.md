@@ -48,7 +48,7 @@ Python's pip installation tool.</li>
 <li>If we want to access individual HDUs, we can index the HDU list object returned by fits.open. The image data can be accessed using the data attribute.</li>
 <li>The image data is conveniently stored in a NumPy array, so we can operate on it directly.</li>
 <li>You often want to visualise the image data stored in FITS files. We can do this using the plotting library matplotlib.
-<div style="text-align: center">
+<div align="center">
 <img src="../images/figure1.png" hieght=500 width=500>
 <p>The above is a mean stack image of a <a href="https://www.youtube.com/watch?v=-335gUOvdhA">pulsar</a> represented by the brightest pixel which is at the center of the plot.</p>
 </div> 
