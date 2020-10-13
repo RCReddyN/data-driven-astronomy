@@ -1,4 +1,4 @@
-<h1> Introdution</h1>
+<h1> Stats, FITS Files and Stacking</h1>
 <p>Python's standard library includes modules for solving a wide range of data processing tasks.</p>
 <p>However, for scientific computing and data analysis, the Python developer community has created packages that simplify numerical computing and optimise performance on large data sets.</p>
 
@@ -20,8 +20,8 @@ Python's pip installation tool.</li>
 
 <p>One further note is that almost all astronomy software is designed to run on Linux / MacOSX. If you use Windows on your home machine you might want to install a virtual machine if you plan to work in this area in the future.</p>
 
-<h1>The mean, the median and the mode</h1>
-<p>Mean, median and mode are numbers that represent a whole set of data or information. Mean, median and mode are together called the measures of central tendency.<p>
+<h1>Measures of Central Tendencies:</h1>
+<p>A measure of central tendency is a summary statistic that represents the center point or typical value of a dataset. These measures indicate where most values in a distribution fall and are also referred to as the central location of a distribution. You can think of it as the tendency of data to cluster around a middle value. In statistics, the three most common measures of central tendency are the mean, median, and mode. Each of these measures calculates the location of the central point using a different method.<p>
 <h3>Mean:</h3>
 <p>The mean is often called the average. To find the mean you take a set of data and calculate the sum of the data, after that you divide the sum by the number of pieces in the set.</p>
 <h3>Median:</h3>
@@ -34,6 +34,7 @@ Python's pip installation tool.</li>
 <p>The mode is the most common number in the set of data.</p>
 
 <h1>Calculating the mean stack of a set of FITS images</h1>
+<h3>Stacking Images:</h3>
 <p>Python lists are very flexible, but they are slow for big calculations.</p>
 
 <p>NumPy arrays can store purely numerical data in much less space, and are much simpler and faster for calculations. Unlike Python lists, NumPy arrays support numerical operations on entire arrays, either as element-wise or matrix operations.</p>
@@ -46,10 +47,20 @@ Python's pip installation tool.</li>
 <li>The header contains metadata about the HDU object, e.g. its dimensions and data type. Every HDU can contain image data. The first HDU is called the primary HDU.</li>
 <li>If we want to access individual HDUs, we can index the HDU list object returned by fits.open. The image data can be accessed using the data attribute.</li>
 <li>The image data is conveniently stored in a NumPy array, so we can operate on it directly.</li>
-<li>You often want to visualise the image data stored in FITS files. We can do this using the plotting library matplotlib.The following is the plot of an example <a href="datasets/image0.fits">fits image.</a> <img src="../images/figure0.png"></li>
+<li>You often want to visualise the image data stored in FITS files. We can do this using the plotting library matplotlib.
+<div style="text-align: center">
+<img src="../images/figure1.png" hieght=500 width=500>
+<p>The above is a mean stack image of a <a href="https://www.youtube.com/watch?v=-335gUOvdhA">pulsar</a> represented by the brightest pixel which is at the center of the plot.</p>
+</div> 
 </ul>
-<footer> The above content is reproduced from:
-<ol><li><a href="https://www.coursera.org/learn/data-driven-astronomy">Data-driven Astronomy</a></li>
-<li><a href="https://www.mathplanet.com/education/pre-algebra/probability-and-statistic/the-mean-the-median-and-the-mode">Math Planet</a></li>
+<h1>Which is Best—the Mean, Median, or Mode?</h1>
+<p>When you have a symmetrical distribution for continuous data, the mean, median, and mode are equal. In this case, analysts tend to use the mean because it includes all of the data in the calculations. However, if you have a skewed distribution, the median is often the best measure of central tendency.</p>
 
-</ol>
+<p>When you have ordinal data, the median or mode is usually the best choice. For categorical data, you have to use the mode.</p>
+
+<footer> The above content is reproduced from:
+<ul><li><a href="https://www.coursera.org/learn/data-driven-astronomy">Data-driven Astronomy</a></li>
+<li><a href="https://www.mathplanet.com/education/pre-algebra/probability-and-statistic/the-mean-the-median-and-the-mode">Math Planet</a></li>
+<li><a href="https://statisticsbyjim.com/basics/measures-central-tendency-mean-median-mode/">Statistics by Jim</a></li>
+
+</ul>
