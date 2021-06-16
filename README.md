@@ -1,4 +1,4 @@
-<h1>Radio Data Analysis</h1>
+<h1>Data Driven Astronomy</h1>
 <h2>Introduction</h2>
 
 <p>The scientific capabilites of the Arecibo and Green Bank instruments must be accessible to all astronomers without requiring detailed knowledge of the electronics, software, and observing techniques.</p> 
